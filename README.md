@@ -53,16 +53,18 @@ ATGG,s3:/fh-pi-kublin-j-microbiome/read_only/REF/ATGG.fasta
 ATCG,s3:/fh-pi-kublin-j-microbiome/read_only/REF/ATCG.fasta
 ```
 
-run_on_cluster.sh
+runs/run_on_cluster.sh
+
+https://github.com/kmayerb/test-aws-squared/blob/1817eaa7986f4d962958a70b163227972e3e5ee3/runs/run_on_cluster.sh#L1-L19
+
 ```
-#! bin/bash
 ml nextflow 
 
 BATCHFILE=s3_test_manifest.csv
 NFCONFIG=aws_cluster.config
 PROJECT=aws2-test
-OUTPUT_FOLDER=pub
-WORK_DIR=work
+OUTPUT_FOLDER=s3:/fh-pi-kublin-j-microbiome/scratch-delete30/testpub
+WORK_DIR=s3:/fh-pi-kublin-j-microbiome/scratch-delete30/testwork
 
 NXF_VER=19.10.0 nextflow \
     -c $NFCONFIG \
