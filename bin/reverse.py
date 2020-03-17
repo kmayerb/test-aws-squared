@@ -1,7 +1,7 @@
-```
-# Reverse filename 
+"""
+Reverse sequences in fasta files 
+"""
 
-```
 import sys
 import argparse
 
