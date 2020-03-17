@@ -81,7 +81,7 @@ aws.config
 process.executor = 'awsbatch'
 // // Run the analysis on the specified queue in AWS Batch
 
-process.queue = 'mixed'
+process.queue = 'cpu-spot-40'
 // // Run in the correct AWS region
 
 
