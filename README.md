@@ -54,9 +54,6 @@ ATCG,s3:/fh-pi-kublin-j-microbiome/read_only/REF/ATCG.fasta
 ```
 
 runs/run_on_cluster.sh
-
-https://github.com/kmayerb/test-aws-squared/blob/1817eaa7986f4d962958a70b163227972e3e5ee3/runs/run_on_cluster.sh#L1-L19
-
 ```
 ml nextflow 
 
