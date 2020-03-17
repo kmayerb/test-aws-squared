@@ -13,7 +13,7 @@ process REVERSE {
 
 	publishDir params.output_folder
 
-	//container "quay.io/kmayerb/aws-batch-conda-py3:0.0.1"
+	container "quay.io/kmayerb/aws-batch-conda-py3:0.0.1"
 
 	input:
 	set name, file(filename) from input_channel
