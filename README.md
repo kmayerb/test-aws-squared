@@ -10,7 +10,7 @@ Test New AWS Squared NF Paradigm With Something Really Simple
 
 ## METHOD 1: LOCAL 
 
-Given `local.config`
+Given `configs/local.config`
 
 ```bash
 process.executor = 'local'
@@ -23,6 +23,7 @@ docker {
 
 This works locally. 
 
+runs/run_local.sh
 ```bash
 #! bin/bash
 BATCHFILE=s3_files/manifest.csv
