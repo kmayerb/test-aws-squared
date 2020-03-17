@@ -11,7 +11,7 @@ nextflow \
     -c $NFCONFIG \
     run \
     kmayerb/test-aws-squared\
-        -r 0.0.1\
+        -r 0.0.4\
         --batchfile $BATCHFILE \
         --output_folder $OUTPUT_FOLDER \
         -work-dir $WORK_DIR \

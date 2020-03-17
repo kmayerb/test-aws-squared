@@ -1,6 +1,3 @@
-params.output_folder = "./pub"
-params.batchfile = "./s3_files/manifest.csv"
-
 Channel.from(file(params.batchfile))
          .splitCsv(header: true, sep: ",")
          .map { sample ->
