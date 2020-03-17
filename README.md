@@ -115,7 +115,7 @@ NXF_VER=19.10.0 nextflow \
     -c $NFCONFIG \
     run \
     kmayerb/test-aws-squared\
-        -r 0.0.1\
+        -r 0.0.4\
         --batchfile $BATCHFILE \
         --output_folder $OUTPUT_FOLDER \
         -with-report $PROJECT.html \
@@ -225,7 +225,7 @@ Note: --watch allows you to see some progress reporting
 
 ```bash
 WORKFLOW=kmayerb/test-aws-squared
-REVISION=0.0.3
+REVISION=0.0.4
 JOB_ROLE_ARN=
 JOB_QUEUE=cpu-spot-50
 NAME=test-aws-squared-first-try
