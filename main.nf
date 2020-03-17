@@ -13,7 +13,7 @@ process REVERSE {
 
 	publishDir params.output_folder
 
-	container "quay.io/kmayerb/aws-batch-conda-py3:0.0.1"
+	//container "quay.io/kmayerb/aws-batch-conda-py3:0.0.1"
 
 	input:
 	set name, file(filename) from input_channel
@@ -23,6 +23,8 @@ process REVERSE {
 
 	script:
 	"""
-	python reverse.py -i ${filename} -o ${name}.rev.fasta
+	reverse.py -i ${filename} -o ${name}.rev.fasta
 	"""
+	//python rev.py -i ${filename} -o ${name}.rev.fasta
+	
 }
